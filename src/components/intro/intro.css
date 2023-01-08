@@ -84,7 +84,6 @@ body {
 .i-img {
     height: 100%;
     width: 100%;
-    object-fit:cover;
     position: absolute;
     
 }
@@ -98,12 +97,14 @@ body {
     top: 0;
     right: 0;
 }
-@media screen and (min-width: 970px){
+
+@media screen and (min-width: 1800px){
     .i-img {
             object-fit: contain;
         }
 }
-@media screen and (max-width: 768px ){
+
+@media screen and (max-width: 1170px ){
     .i{
         flex-direction: column;
 
@@ -118,7 +119,14 @@ body {
         justify-content: center;
         height: 100%;
     }
-    .i-desc{
-        display: none;
-    }
+    
 }
+
+@media screen and (max-width: 768px) {
+.i-desc {
+    display: none;
+}}
+@media screen and (max-width: 500px) {
+    .i-img {
+            object-fit: cover;
+        }}
